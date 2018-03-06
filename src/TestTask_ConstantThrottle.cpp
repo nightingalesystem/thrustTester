@@ -41,7 +41,7 @@ int TestTask_ConstantThrottle::step(int currentThrottle, sampleData& currentSamp
 
     int change = m_throttle - currentThrottle;
 
-    change = constrain(change, -10, 10);
+    change = constrain(change, -100, 100);
 
     return currentThrottle + change;
 }
